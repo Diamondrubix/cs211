@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/midTerm.dir/main.c.o  -o midTerm 

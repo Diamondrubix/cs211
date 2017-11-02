@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/211Tempc__labFile.dir/main.cpp.o  -o 211Tempc__labFile 

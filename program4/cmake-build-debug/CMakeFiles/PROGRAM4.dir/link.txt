@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/PROGRAM4.dir/proj4base.c.o  -o PROGRAM4 

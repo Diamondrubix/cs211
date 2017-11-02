@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/prepMidTerm.dir/main.c.o  -o prepMidTerm 

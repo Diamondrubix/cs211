@@ -1,0 +1,3 @@
+/home/diamondrubix/CLionProjects/cs 211/lab8lecture/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/diamondrubix/CLionProjects/cs 211/lab8lecture/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/diamondrubix/CLionProjects/cs 211/lab8lecture/cmake-build-debug/CMakeFiles/lab8lecture.dir

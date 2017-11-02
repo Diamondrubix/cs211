@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/lab8lecture/main.cpp
+cstdio
+-
+cstdarg
+-
+cmath
+-
+
