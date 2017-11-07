@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/project5.dir/main.cpp.o  -o project5 
+/usr/bin/c++  -g   CMakeFiles/project5.dir/arrayListMine.cpp.o CMakeFiles/project5.dir/main.cpp.o CMakeFiles/project5.dir/myfunc.cpp.o  -o project5 

@@ -57,9 +57,33 @@ include CMakeFiles/project5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project5.dir/flags.make
 
+CMakeFiles/project5.dir/arrayListMine.cpp.o: CMakeFiles/project5.dir/flags.make
+CMakeFiles/project5.dir/arrayListMine.cpp.o: ../arrayListMine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project5.dir/arrayListMine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project5.dir/arrayListMine.cpp.o -c "/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp"
+
+CMakeFiles/project5.dir/arrayListMine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project5.dir/arrayListMine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp" > CMakeFiles/project5.dir/arrayListMine.cpp.i
+
+CMakeFiles/project5.dir/arrayListMine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project5.dir/arrayListMine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp" -o CMakeFiles/project5.dir/arrayListMine.cpp.s
+
+CMakeFiles/project5.dir/arrayListMine.cpp.o.requires:
+
+.PHONY : CMakeFiles/project5.dir/arrayListMine.cpp.o.requires
+
+CMakeFiles/project5.dir/arrayListMine.cpp.o.provides: CMakeFiles/project5.dir/arrayListMine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.o.provides.build
+.PHONY : CMakeFiles/project5.dir/arrayListMine.cpp.o.provides
+
+CMakeFiles/project5.dir/arrayListMine.cpp.o.provides.build: CMakeFiles/project5.dir/arrayListMine.cpp.o
+
+
 CMakeFiles/project5.dir/main.cpp.o: CMakeFiles/project5.dir/flags.make
 CMakeFiles/project5.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project5.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project5.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project5.dir/main.cpp.o -c "/home/diamondrubix/CLionProjects/cs 211/project5/main.cpp"
 
 CMakeFiles/project5.dir/main.cpp.i: cmake_force
@@ -81,17 +105,45 @@ CMakeFiles/project5.dir/main.cpp.o.provides: CMakeFiles/project5.dir/main.cpp.o.
 CMakeFiles/project5.dir/main.cpp.o.provides.build: CMakeFiles/project5.dir/main.cpp.o
 
 
+CMakeFiles/project5.dir/myfunc.cpp.o: CMakeFiles/project5.dir/flags.make
+CMakeFiles/project5.dir/myfunc.cpp.o: ../myfunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project5.dir/myfunc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project5.dir/myfunc.cpp.o -c "/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp"
+
+CMakeFiles/project5.dir/myfunc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project5.dir/myfunc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp" > CMakeFiles/project5.dir/myfunc.cpp.i
+
+CMakeFiles/project5.dir/myfunc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project5.dir/myfunc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp" -o CMakeFiles/project5.dir/myfunc.cpp.s
+
+CMakeFiles/project5.dir/myfunc.cpp.o.requires:
+
+.PHONY : CMakeFiles/project5.dir/myfunc.cpp.o.requires
+
+CMakeFiles/project5.dir/myfunc.cpp.o.provides: CMakeFiles/project5.dir/myfunc.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.o.provides.build
+.PHONY : CMakeFiles/project5.dir/myfunc.cpp.o.provides
+
+CMakeFiles/project5.dir/myfunc.cpp.o.provides.build: CMakeFiles/project5.dir/myfunc.cpp.o
+
+
 # Object files for target project5
 project5_OBJECTS = \
-"CMakeFiles/project5.dir/main.cpp.o"
+"CMakeFiles/project5.dir/arrayListMine.cpp.o" \
+"CMakeFiles/project5.dir/main.cpp.o" \
+"CMakeFiles/project5.dir/myfunc.cpp.o"
 
 # External object files for target project5
 project5_EXTERNAL_OBJECTS =
 
+project5: CMakeFiles/project5.dir/arrayListMine.cpp.o
 project5: CMakeFiles/project5.dir/main.cpp.o
+project5: CMakeFiles/project5.dir/myfunc.cpp.o
 project5: CMakeFiles/project5.dir/build.make
 project5: CMakeFiles/project5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable project5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable project5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +151,9 @@ CMakeFiles/project5.dir/build: project5
 
 .PHONY : CMakeFiles/project5.dir/build
 
+CMakeFiles/project5.dir/requires: CMakeFiles/project5.dir/arrayListMine.cpp.o.requires
 CMakeFiles/project5.dir/requires: CMakeFiles/project5.dir/main.cpp.o.requires
+CMakeFiles/project5.dir/requires: CMakeFiles/project5.dir/myfunc.cpp.o.requires
 
 .PHONY : CMakeFiles/project5.dir/requires
 

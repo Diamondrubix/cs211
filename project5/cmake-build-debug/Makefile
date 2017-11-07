@@ -123,6 +123,33 @@ project5/fast:
 	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/build
 .PHONY : project5/fast
 
+arrayListMine.o: arrayListMine.cpp.o
+
+.PHONY : arrayListMine.o
+
+# target to build an object file
+arrayListMine.cpp.o:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.o
+.PHONY : arrayListMine.cpp.o
+
+arrayListMine.i: arrayListMine.cpp.i
+
+.PHONY : arrayListMine.i
+
+# target to preprocess a source file
+arrayListMine.cpp.i:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.i
+.PHONY : arrayListMine.cpp.i
+
+arrayListMine.s: arrayListMine.cpp.s
+
+.PHONY : arrayListMine.s
+
+# target to generate assembly for a file
+arrayListMine.cpp.s:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.s
+.PHONY : arrayListMine.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+myfunc.o: myfunc.cpp.o
+
+.PHONY : myfunc.o
+
+# target to build an object file
+myfunc.cpp.o:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.o
+.PHONY : myfunc.cpp.o
+
+myfunc.i: myfunc.cpp.i
+
+.PHONY : myfunc.i
+
+# target to preprocess a source file
+myfunc.cpp.i:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.i
+.PHONY : myfunc.cpp.i
+
+myfunc.s: myfunc.cpp.s
+
+.PHONY : myfunc.s
+
+# target to generate assembly for a file
+myfunc.cpp.s:
+	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.s
+.PHONY : myfunc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project5"
+	@echo "... arrayListMine.o"
+	@echo "... arrayListMine.i"
+	@echo "... arrayListMine.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... myfunc.o"
+	@echo "... myfunc.i"
+	@echo "... myfunc.s"
 .PHONY : help
 
 

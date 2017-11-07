@@ -84,7 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp">
+			<Option target="project5"/>
+		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.h">
+			<Option target="project5"/>
+		</Unit>
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/main.cpp">
+			<Option target="project5"/>
+		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp">
+			<Option target="project5"/>
+		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.h">
+			<Option target="project5"/>
+		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/program5.h">
 			<Option target="project5"/>
 		</Unit>
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project5/CMakeLists.txt">

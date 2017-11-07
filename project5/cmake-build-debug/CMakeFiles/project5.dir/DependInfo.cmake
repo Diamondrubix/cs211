@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp" "/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles/project5.dir/arrayListMine.cpp.o"
   "/home/diamondrubix/CLionProjects/cs 211/project5/main.cpp" "/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles/project5.dir/main.cpp.o"
+  "/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp" "/home/diamondrubix/CLionProjects/cs 211/project5/cmake-build-debug/CMakeFiles/project5.dir/myfunc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
