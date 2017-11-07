@@ -262,11 +262,15 @@ int main(int argc, char *argv[])
 {
     /***************************************************************/
     /* Add code for checking command line arguments for debug mode */
-   // if(strcmp(argv[1],"-d")==0){
-     //   debugmode=1;
-    //}
-    //debugmode = 1;
-    debugmode = 0;
+    if(argc>1) {
+        if (strcmp(argv[1], "-d") == 0) {
+            debugmode = 1;
+            printf("DEBUG MODE\n");
+        }
+    }else{
+        debugmode = 0;
+    }
+
 
 
     Token inputToken;
@@ -326,7 +330,7 @@ void processExpression (Token inputToken, TokenReader *tr)
         if (inputToken.equalsType(VALUE))
         {
             /* make this a debugMode statement */
-            printf ("Val: %d, ", inputToken.getValue() );
+            if(debugmode) {printf ("Val: %d, ", inputToken.getValue() );}
 
             // add code to perform this operation here
 
@@ -339,7 +343,8 @@ void processExpression (Token inputToken, TokenReader *tr)
         {
             /* make this a debugMode statement */
             char op = inputToken.getOperator();
-            printf ("OP: %c, ", op );
+
+            if(debugmode) printf ("OP: %c, ", op );
 
             // add code to perform this operation here
             if(op=='('){
@@ -373,7 +378,7 @@ void processExpression (Token inputToken, TokenReader *tr)
     // add code to perform this operation here
 
     printf("\n");
-
+/*
     if(debugmode) {
         for (int i = 0; i < nums.length(); i++) {
             printf("%d ", nums.get(i));
@@ -383,6 +388,7 @@ void processExpression (Token inputToken, TokenReader *tr)
             printf("%c ", ops.get(i));
         }
     }
+    */
 
     //postfix conversion
 
