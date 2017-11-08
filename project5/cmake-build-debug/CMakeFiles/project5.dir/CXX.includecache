@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.cpp
+arrayListMine.h
+/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.h
+
+/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/home/diamondrubix/CLionProjects/cs 211/project5/main.cpp
+program5.h
+/home/diamondrubix/CLionProjects/cs 211/project5/program5.h
+arrayListMine.h
+/home/diamondrubix/CLionProjects/cs 211/project5/arrayListMine.h
+iostream
+-
+cstdio
+-
+cstring
+-
+cctype
+-
+
+/home/diamondrubix/CLionProjects/cs 211/project5/myfunc.cpp
+
+/home/diamondrubix/CLionProjects/cs 211/project5/program5.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
