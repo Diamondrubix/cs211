@@ -48,10 +48,10 @@ RM = /home/diamondrubix/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/diamondrubix/CLionProjects/cs 211/project5"
+CMAKE_SOURCE_DIR = "/home/diamondrubix/CLionProjects/cs 211/project6"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/diamondrubix/CLionProjects/cs 211/project5"
+CMAKE_BINARY_DIR = "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/diamondrubix/CLionProjects/cs 211/project5/CMakeFiles" "/home/diamondrubix/CLionProjects/cs 211/project5/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles" "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/diamondrubix/CLionProjects/cs 211/project5/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named project5
+# Target rules for targets named project6
 
 # Build rule for target.
-project5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 project5
-.PHONY : project5
+project6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 project6
+.PHONY : project6
 
 # fast build rule for target.
-project5/fast:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/build
-.PHONY : project5/fast
+project6/fast:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/build
+.PHONY : project6/fast
 
-arrayListMine.o: arrayListMine.cpp.o
+airport.o: airport.cpp.o
 
-.PHONY : arrayListMine.o
+.PHONY : airport.o
 
 # target to build an object file
-arrayListMine.cpp.o:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.o
-.PHONY : arrayListMine.cpp.o
+airport.cpp.o:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/airport.cpp.o
+.PHONY : airport.cpp.o
 
-arrayListMine.i: arrayListMine.cpp.i
+airport.i: airport.cpp.i
 
-.PHONY : arrayListMine.i
+.PHONY : airport.i
 
 # target to preprocess a source file
-arrayListMine.cpp.i:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.i
-.PHONY : arrayListMine.cpp.i
+airport.cpp.i:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/airport.cpp.i
+.PHONY : airport.cpp.i
 
-arrayListMine.s: arrayListMine.cpp.s
+airport.s: airport.cpp.s
 
-.PHONY : arrayListMine.s
+.PHONY : airport.s
 
 # target to generate assembly for a file
-arrayListMine.cpp.s:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/arrayListMine.cpp.s
-.PHONY : arrayListMine.cpp.s
+airport.cpp.s:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/airport.cpp.s
+.PHONY : airport.cpp.s
 
 main.o: main.cpp.o
 
@@ -156,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,35 +174,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-myfunc.o: myfunc.cpp.o
+myNode.o: myNode.cpp.o
 
-.PHONY : myfunc.o
+.PHONY : myNode.o
 
 # target to build an object file
-myfunc.cpp.o:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.o
-.PHONY : myfunc.cpp.o
+myNode.cpp.o:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/myNode.cpp.o
+.PHONY : myNode.cpp.o
 
-myfunc.i: myfunc.cpp.i
+myNode.i: myNode.cpp.i
 
-.PHONY : myfunc.i
+.PHONY : myNode.i
 
 # target to preprocess a source file
-myfunc.cpp.i:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.i
-.PHONY : myfunc.cpp.i
+myNode.cpp.i:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/myNode.cpp.i
+.PHONY : myNode.cpp.i
 
-myfunc.s: myfunc.cpp.s
+myNode.s: myNode.cpp.s
 
-.PHONY : myfunc.s
+.PHONY : myNode.s
 
 # target to generate assembly for a file
-myfunc.cpp.s:
-	$(MAKE) -f CMakeFiles/project5.dir/build.make CMakeFiles/project5.dir/myfunc.cpp.s
-.PHONY : myfunc.cpp.s
+myNode.cpp.s:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/myNode.cpp.s
+.PHONY : myNode.cpp.s
 
 # Help Target
 help:
@@ -212,16 +212,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... project5"
-	@echo "... arrayListMine.o"
-	@echo "... arrayListMine.i"
-	@echo "... arrayListMine.s"
+	@echo "... project6"
+	@echo "... airport.o"
+	@echo "... airport.i"
+	@echo "... airport.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... myfunc.o"
-	@echo "... myfunc.i"
-	@echo "... myfunc.s"
+	@echo "... myNode.o"
+	@echo "... myNode.i"
+	@echo "... myNode.s"
 .PHONY : help
 
 

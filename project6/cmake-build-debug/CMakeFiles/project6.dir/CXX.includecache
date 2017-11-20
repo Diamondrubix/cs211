@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/project6/airport.cpp
+airport.h
+/home/diamondrubix/CLionProjects/cs 211/project6/airport.h
+
+/home/diamondrubix/CLionProjects/cs 211/project6/airport.h
+jmorecfg.h
+-
+dynamicArray.h
+/home/diamondrubix/CLionProjects/cs 211/project6/dynamicArray.h
+
+/home/diamondrubix/CLionProjects/cs 211/project6/dynamicArray.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/home/diamondrubix/CLionProjects/cs 211/project6/main.cpp
+cstdio
+-
+cstring
+-
+cstdlib
+-
+airport.h
+/home/diamondrubix/CLionProjects/cs 211/project6/airport.h
+
+/home/diamondrubix/CLionProjects/cs 211/project6/myNode.cpp
+airport.h
+/home/diamondrubix/CLionProjects/cs 211/project6/airport.h
+

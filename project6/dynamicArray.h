@@ -1,19 +1,12 @@
 //
-// Created by diamondrubix on 11/2/17.
-//
+// Created by diamondrubix on 11/17/17.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
-
-#ifndef PROJECT5_ARRAYLISTMINE_CPP_H
-#define PROJECT5_ARRAYLISTMINE_CPP_H
-
-#endif //PROJECT5_ARRAYLISTMINE_CPP_H
 //typedef enum {FALSE = 0, TRUE, NO = 0, YES} boolean;
 
-template <class t> class ArrayList{
+template <class t> class dynamicArray{
 private:
     int size;//size of the array
     int leng;//amount of elements in the array
@@ -22,18 +15,22 @@ private:
     t* arr;
 
     void init(){
-        size = 2;
-        leng = -1;
+        size = 10;
+        leng = -1; //needs to be 0 for the first add
         end = 0;
         growth = 2;
-        t* arr;
+        //t* arr;
+        arr = (t *) malloc ( size * sizeof(t) );
     }
 
 public:
 
-    ArrayList(){
+    dynamicArray(){
         init();
-        arr = (t *) malloc ( size * sizeof(t) );
+    }
+    dynamicArray(int startSize){
+        init();
+        size = startSize;
     }
 
     t add(t a){
