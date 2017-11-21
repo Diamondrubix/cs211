@@ -9,6 +9,7 @@ class TravelNetwork
 private:
     // Create the Data Members for the Travel Network here
     dynamicArray<airport*>* airports;
+    dynamicArray<char*>* files;
 
 public:
 
@@ -16,6 +17,7 @@ public:
     TravelNetwork() //: airports(10)
     {
         airports = new dynamicArray<airport*>(10);
+        files = new dynamicArray<char*>();
 
     }
 
@@ -293,11 +295,29 @@ public:
 
         printf ("Performing the File command with file: %s\n", fname);
 
+        if(!fileInUse(fname)){
+            //FILE* infile = fopen("test.txt","r");
+            FILE* fp = fopen(fname, "r");
+            processCommandLoop(fp);
+            fclose(fp);
+        }
+
+
         // next steps:  (if any step fails: print an error message and return )
         //  1. verify the file name is not currently in use
         //  2. open the file using fopen creating a new instance of FILE*
         //  3. recursively call processCommandLoop() with this new instance of FILE* as the parameter
         //  4. close the file when processCommandLoop() returns
+    }
+
+    boolean fileInUse(char* f){
+        int i;
+        for(i=0;i<=files->length();i++){
+            if(!strcmp (files->get(i),f)){
+                return true;
+            }
+        }
+        return false;
     }
 };
 
