@@ -52,7 +52,6 @@ public:
                 doTravel();
 
             else if ( strcmp (command, "r") == 0) {
-
                 sscanf(strtok(NULL, " \n\t"), "%d", &numInput);
                 doResize(numInput);
             }
@@ -129,10 +128,60 @@ public:
 
 
         printf ("Performing the Travel Command from %d to %d\n", val1, val2);
-
+        //start travel algorithm
+        depthFirstSearchHelper(val1,val2);
 
 
     }
+
+    void depthFirstSearchHelper (int x, int y){
+        //unvisist everything
+        int i;
+        for(i = 0; i<=airports->length();i++){
+            airports->get(i)->setVisited(false);
+        }
+        //above is unvisit
+
+
+        if(dfs(x,y)) {
+            printf("You can get from airport %d to airport %d in one or more flights",x,y);
+        }else{
+            printf("You can NOT get from airport %d to airport %d in one or more flights",x,y);
+        }
+
+    }
+
+    boolean dfs(int val1, int val2) {
+        int i;
+        for (i = 0; i < airports->length(); i++) {
+            if (airports->get(i)->getAirPortNumber() == val1) {
+                int j;
+                for (j = 0; j < airports->get(i)->getHead()->size; i++) {
+                    if (airports->get(i)->getHead()->getNAirport(j)->getAirPortNumber() == val2) { //if
+                        return true;
+                    }
+                    if (!airports->get(i)->getVisited()) {
+                        airports->get(i)->setVisited(true);
+                        if (dfs(airports->get(i)->getAirPortNumber(), val2)) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+    }
+
+
+/* //idk why this errored
+    void unVisitAllAirports(){
+        int i;
+        for(i = 0; i<=airports;i++){
+            airports->get(i)->setVisited(false);
+        }
+    }
+    */
+
 
     void doResize(int v)
     {
@@ -146,6 +195,7 @@ public:
 
     void doInsert()
     {
+
         int val1;
         int val2;
         sscanf(strtok(NULL, " \n\t"), "%d", &val1);
@@ -170,13 +220,21 @@ public:
 
         a->addEdge(b);
 
-        //airports->add(new airport())
+        /*
+        printf("\nall edges in 1\n");
+        for(int i =0; i<airports->get(0)->getHead()->size;i++){
+            printf("%d ",airports->get(0)->getHead()->getNAirport(i)->getAirPortNumber());
+        }
+         */
+
+        //printf("\nairport number %d\n", a->getHead()->getNAirport(2)->getAirPortNumber());
+
 
     }
     //returns the airport with the code
     airport* getAirport(int code){
         int i;
-        for(i=0; i<airports->length();i++){
+        for(i=0; i<=airports->length();i++){
             if(airports->get(i)->getAirPortNumber()==code){
                 return airports->get(i);
             }
@@ -186,7 +244,7 @@ public:
     //return 1 if it exists
     int checkExist(int code){
         int i;
-        for(i=0; i<airports->length();i++){
+        for(i=0; i<=airports->length();i++){
             if(airports->get(i)->getAirPortNumber()==code){
                 return 1;
             }
@@ -196,11 +254,30 @@ public:
 
     void doDelete()
     {
+        int val1;
+        int val2;
+        sscanf(strtok(NULL, " \n\t"), "%d", &val1);
+        sscanf(strtok(NULL, " \n\t"), "%d", &val2);
+
+        int i;
+        for(i = 0; i<airports->length();i++){
+            if(airports->get(i)->getAirPortNumber()==val1){
+                airports->get(i)->getHead()->deleteEdgeByValue(val2);
+            }
+        }
 
     }
 
     void doList()
     {
+        int i;
+        for(i =0; i<=airports->length();i++){
+            printf("\nairports reachable from airport %d are\n",airports->get(i)->getAirPortNumber());
+            int j;
+            for(int j=0;j<airports->get(i)->getHead()->size;j++){
+                printf("%d ",airports->get(i)->getHead()->getNAirport(j)->getAirPortNumber());
+            }
+        }
 
     }
 

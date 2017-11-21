@@ -4,35 +4,74 @@
 
 #include "airport.h"
 
+
 myNode::myNode() {
-    next = NULL;
-    airport* a;
+    size = 0;
+    header.next = NULL;
+    header.a = NULL;
 }
 
-myNode* myNode::getLast(myNode *i) {
-    if(next!=NULL){
-        return getLast(next);
+
+void myNode::add(airport* a){
+    node *newer = (node *) malloc(sizeof(node));
+    newer->a = a;
+    getLast(&header)->next=newer;
+    size++;
+}
+
+node* myNode::getLast(node* n) {
+    if(n->next!=NULL){
+        return getLast(n->next);
     }
-    return this;
+    return n;
 }
 
-void myNode::add(airport* i) {
-    getLast(next)->setAirport(i);
+airport* myNode::getNAirport(int i) {
+    if(i==0){
+        return header.next->a;
+    }else{
+        node* temp = header.next;
+        while(i!=0){
+            temp = temp->next;
+            i--;
+        }
+        return temp->a;
+    }
 }
 
-airport* myNode::setAirport(airport *i) {
-    a=i;
+void myNode::deleteEdge(airport *a) {
+    node* temp=header.next;
+    if(header.next->a == a){
+        temp = header.next->next;
+        free(header.next);
+        header.next=temp;
+    }else{
+        while(temp->next->a!=a){
+            temp=temp->next;
+        }
+        node* temp2 = temp->next->next;
+        free(temp->next);
+        temp->next=temp2;
+    }
+    size--;
+}
+
+void myNode::deleteEdgeByValue(int i) {
+    node* temp=header.next;
+    if(header.next->a->getAirPortNumber() == i){
+        temp = header.next->next;
+        free(header.next);
+        header.next=temp;
+    }else{
+        while(temp->next->a->getAirPortNumber()!=i){
+            temp=temp->next;
+        }
+        node* temp2 = temp->next->next;
+        free(temp->next);
+        temp->next=temp2;
+    }
+    size--;
 }
 
 
-myNode* myNode::getNext() {
-    return next;
-}
 
-airport* myNode::getElem(){
-    return a;
-}
-
-void myNode::delElement(airport* i) {
-
-}

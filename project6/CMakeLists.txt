@@ -3,5 +3,5 @@ project(project6)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp dynamicArray.h airport.cpp airport.h myNode.h myNode.cpp)
+set(SOURCE_FILES main.cpp dynamicArray.h airport.cpp airport.h myNode.h myNode.cpp oldNode.cpp)
 add_executable(project6 ${SOURCE_FILES})

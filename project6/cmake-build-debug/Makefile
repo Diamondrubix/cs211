@@ -204,6 +204,33 @@ myNode.cpp.s:
 	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/myNode.cpp.s
 .PHONY : myNode.cpp.s
 
+oldNode.o: oldNode.cpp.o
+
+.PHONY : oldNode.o
+
+# target to build an object file
+oldNode.cpp.o:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/oldNode.cpp.o
+.PHONY : oldNode.cpp.o
+
+oldNode.i: oldNode.cpp.i
+
+.PHONY : oldNode.i
+
+# target to preprocess a source file
+oldNode.cpp.i:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/oldNode.cpp.i
+.PHONY : oldNode.cpp.i
+
+oldNode.s: oldNode.cpp.s
+
+.PHONY : oldNode.s
+
+# target to generate assembly for a file
+oldNode.cpp.s:
+	$(MAKE) -f CMakeFiles/project6.dir/build.make CMakeFiles/project6.dir/oldNode.cpp.s
+.PHONY : oldNode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... myNode.o"
 	@echo "... myNode.i"
 	@echo "... myNode.s"
+	@echo "... oldNode.o"
+	@echo "... oldNode.i"
+	@echo "... oldNode.s"
 .PHONY : help
 
 

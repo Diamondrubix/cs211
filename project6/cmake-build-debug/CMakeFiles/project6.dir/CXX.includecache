@@ -15,6 +15,8 @@ jmorecfg.h
 -
 dynamicArray.h
 /home/diamondrubix/CLionProjects/cs 211/project6/dynamicArray.h
+myNode.h
+/home/diamondrubix/CLionProjects/cs 211/project6/myNode.h
 
 /home/diamondrubix/CLionProjects/cs 211/project6/dynamicArray.h
 stdio.h
@@ -39,4 +41,8 @@ airport.h
 /home/diamondrubix/CLionProjects/cs 211/project6/myNode.cpp
 airport.h
 /home/diamondrubix/CLionProjects/cs 211/project6/airport.h
+
+/home/diamondrubix/CLionProjects/cs 211/project6/myNode.h
+
+/home/diamondrubix/CLionProjects/cs 211/project6/oldNode.cpp
 

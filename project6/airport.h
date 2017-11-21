@@ -11,19 +11,40 @@
 #include "dynamicArray.h"
 #include "myNode.h"
 
-template <class t> class myNode{
-private:
-    t* a;
-    myNode* getLast(myNode* i);
+class airport;
 
+typedef struct node
+{
+    struct node* next;
+    airport* a;
+}node;
+
+class myNode{
+private:
+    node header;
 public:
-    myNode* next;
+    int size;
+    //myNode* next;
     myNode();
+    node* getLast(node*);
+    void add(airport* a);
+    airport* getNAirport(int i);
+    void deleteEdge(airport* a);
+    void deleteEdgeByValue(int i);
+
+    /*
+    airport* get(int i);
+    void deleteElem(airport* a);
+     */
+
+
+    /*
     void add(airport* i);
     myNode* getNext();
-    airport* setAirport(airport* i); //set element
+    void setAirport(airport* i); //set element
     void delElement(airport* i); //delete airport//im not consistent cuz i wanna turn this into a generic later.
     airport* getElem();
+     */
 
 };
 
@@ -35,7 +56,7 @@ private:
     boolean visited;
     int airportNumber;
 
-    void deleteUtil(myNode* e,airport* a);
+    //void deleteUtil(myNode* e,airport* a);
 
 public:
     airport(int num) //: destinations(5)
@@ -46,7 +67,10 @@ public:
     }
 
     void addEdge(airport* i);//adds a edge
-    void deleteEdge(airport* i);
+    myNode* getHead();
+    void setVisited(boolean b);
+    boolean getVisited();
+    //void deleteEdge(airport* i);
     int getAirPortNumber();
 
 

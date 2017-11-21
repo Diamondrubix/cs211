@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/diamondrubix/CLionProjects/cs 211/project6/airport.cpp" "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles/project6.dir/airport.cpp.o"
   "/home/diamondrubix/CLionProjects/cs 211/project6/main.cpp" "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles/project6.dir/main.cpp.o"
   "/home/diamondrubix/CLionProjects/cs 211/project6/myNode.cpp" "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles/project6.dir/myNode.cpp.o"
+  "/home/diamondrubix/CLionProjects/cs 211/project6/oldNode.cpp" "/home/diamondrubix/CLionProjects/cs 211/project6/cmake-build-debug/CMakeFiles/project6.dir/oldNode.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -102,6 +102,9 @@
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project6/myNode.h">
 			<Option target="project6"/>
 		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project6/oldNode.cpp">
+			<Option target="project6"/>
+		</Unit>
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

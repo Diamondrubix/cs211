@@ -24,7 +24,6 @@ private:
     }
 
 public:
-
     dynamicArray(){
         init();
     }

@@ -10,6 +10,13 @@ void airport::addEdge(airport* i) {
     //destinations.add(i);
 }
 
+void airport::setVisited(boolean b) {
+    visited=b;
+}
+boolean airport::getVisited() {
+    return visited;
+}
+/*
 void airport::deleteEdge(airport* a){
     if(edges->getElem()==a){
         myNode* temp = edges->next;
@@ -31,7 +38,12 @@ void airport::deleteUtil(myNode *e, airport *a) {
         }
     }
 }
+ */
 
 int airport::getAirPortNumber(){
     return airportNumber;
+}
+
+myNode* airport::getHead() {
+    return edges;
 }

@@ -4,12 +4,17 @@
 CMakeFiles/project6.dir/airport.cpp.o: ../airport.cpp
 CMakeFiles/project6.dir/airport.cpp.o: ../airport.h
 CMakeFiles/project6.dir/airport.cpp.o: ../dynamicArray.h
+CMakeFiles/project6.dir/airport.cpp.o: ../myNode.h
 
 CMakeFiles/project6.dir/main.cpp.o: ../airport.h
 CMakeFiles/project6.dir/main.cpp.o: ../dynamicArray.h
 CMakeFiles/project6.dir/main.cpp.o: ../main.cpp
+CMakeFiles/project6.dir/main.cpp.o: ../myNode.h
 
 CMakeFiles/project6.dir/myNode.cpp.o: ../airport.h
 CMakeFiles/project6.dir/myNode.cpp.o: ../dynamicArray.h
 CMakeFiles/project6.dir/myNode.cpp.o: ../myNode.cpp
+CMakeFiles/project6.dir/myNode.cpp.o: ../myNode.h
+
+CMakeFiles/project6.dir/oldNode.cpp.o: ../oldNode.cpp
 
