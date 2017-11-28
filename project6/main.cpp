@@ -2,6 +2,8 @@
 #include <cstring>
 #include <cstdlib>
 #include "airport.h"
+#include <iostream>
+using namespace std;
 //#include "dynamicArray.h"
 
 class TravelNetwork
@@ -25,60 +27,63 @@ public:
     // The main loop for reading in input
     void processCommandLoop (FILE* inFile)
     {
-        char  buffer[300];
-        char* input;
+        try{
+            char  buffer[500];
+            char* input;
 
-        input = fgets ( buffer, 300, inFile );   // get a line of input
-        int numInput;
-        // loop until all lines are read from the input
-        while (input != NULL)
-        {
-            // process each line of input using the strtok functions
-            char* command;
-            command = strtok (input , " \n\t");
-            //printf("\nINPUT%s\n",input);
-            //printf("\nCOMMAND%s\n",);
+            input = fgets ( buffer, 500, inFile );   // get a line of input
+            int numInput;
+            // loop until all lines are read from the input
+            while (input != NULL)
+            {
+                // process each line of input using the strtok functions
+                char* command;
+                command = strtok (input , " \n\t");
+                //printf("\nINPUT%s\n",input);
+                //printf("\nCOMMAND%s\n",);
 
-            printf ("*%s*\n", command);
+                printf ("*%s*\n", command);
 
-            if ( command == NULL )
-                printf ("Blank Line\n");
+                if ( command == NULL )
+                    printf ("Blank Line\n");
 
-            else if ( strcmp (command, "q") == 0)
-                exit(1);
+                else if ( strcmp (command, "q") == 0)
+                    exit(1);
 
-            else if ( strcmp (command, "?") == 0)
-                showCommands();
+                else if ( strcmp (command, "?") == 0)
+                    showCommands();
 
-            else if ( strcmp (command, "t") == 0)
-                doTravel();
+                else if ( strcmp (command, "t") == 0)
+                    doTravel();
 
-            else if ( strcmp (command, "r") == 0) {
-                sscanf(strtok(NULL, " \n\t"), "%d", &numInput);
-                doResize(numInput);
+                else if ( strcmp (command, "r") == 0) {
+                    sscanf(strtok(NULL, " \n\t"), "%d", &numInput);
+                    doResize(numInput);
+                }
+
+                else if ( strcmp (command, "i") == 0)
+                    doInsert();
+
+                else if ( strcmp (command, "d") == 0)
+                    doDelete();
+
+                else if ( strcmp (command, "l") == 0)
+                    doList();
+
+                else if ( strcmp (command, "f") == 0)
+                    doFile();
+
+                else if ( strcmp (command, "#") == 0)
+                    ;
+
+                else
+                    printf ("Command is not known: %s\n", command);
+
+                input = fgets ( buffer, 300, inFile );   // get the next line of input
+
             }
-
-            else if ( strcmp (command, "i") == 0)
-                doInsert();
-
-            else if ( strcmp (command, "d") == 0)
-                doDelete();
-
-            else if ( strcmp (command, "l") == 0)
-                doList();
-
-            else if ( strcmp (command, "f") == 0)
-                doFile();
-
-            else if ( strcmp (command, "#") == 0)
-                ;
-
-            else
-                printf ("Command is not known: %s\n", command);
-
-            input = fgets ( buffer, 300, inFile );   // get the next line of input
-
-        }
+        }catch(int e){
+            printf("something went wrong\n");}
     }
 
     void showCommands()
@@ -335,3 +340,4 @@ int main (int argc, char** argv)
     printf ("Goodbye\n");
     return 1;
 }
+
