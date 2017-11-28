@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/Point2d.cpp
+Point2d.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/Point2d.h
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/Point2d.h
+cstdio
+-
+cstdarg
+-
+cmath
+-
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/Point2dTest.cpp
+tinytest.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/tinytest.h
+Point2d.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/Point2d.h
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/dynamicArray.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/tinytest.h
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+dynamicArray.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab12/dynamicArray.h
+

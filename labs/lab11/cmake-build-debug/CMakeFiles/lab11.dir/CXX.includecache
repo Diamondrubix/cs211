@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab11/Point2d.cpp
+Point2d.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab11/Point2d.h
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab11/Point2d.h
+cstdio
+-
+cstdarg
+-
+cmath
+-
+
+/home/diamondrubix/CLionProjects/cs 211/labs/lab11/lab11.cpp
+Point2d.h
+/home/diamondrubix/CLionProjects/cs 211/labs/lab11/Point2d.h
+
