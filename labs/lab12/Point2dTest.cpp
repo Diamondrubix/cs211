@@ -23,6 +23,7 @@
 
 #include "tinytest.h"
 #include "Point2d.h"
+//#include "dynamicArray.h"
 
 // testing the setX() and getX() methods in class Point2d
 void testGetSetX ()
@@ -67,13 +68,15 @@ void testGetQuadrant()
   ASSERT_EQUALS ( 0 , p1.getQuadrant() );
   p1.setXY ( 3, 4 );
   ASSERT_EQUALS ( 1 , p1.getQuadrant() );
-  p1.setXY ( -3, -4 );
-  ASSERT_EQUALS ( 3 , p1.getQuadrant() );
-  p1.setXY ( -2, -4 );
-  ASSERT_EQUALS ( 3 , p1.getQuadrant() );
 
   p1.setXY(8,-2);
   ASSERT_EQUALS(4,p1.getQuadrant());
+    p1.setXY(-7,0);
+    ASSERT_EQUALS(0,p1.getQuadrant());
+    p1.setXY(-8,0);
+    ASSERT_EQUALS(0,p1.getQuadrant());
+
+
 
 }
 
@@ -89,7 +92,20 @@ int main ( int argc, char** argv )
   RUN (testGetSetY);
   RUN (testDistanceFrom);
   RUN (testGetQuadrant);
-    //RUN (testtest);
+    RUN (testtest);
 
   return TEST_REPORT();
+
+/*
+    dynamicArray<int>* a = new dynamicArray<int>();
+    for(int i =0; i<100;i++){
+        a->add(i);
+    }
+
+    for(int i =0; i<100;i++){
+        printf("val %d\n",a->get(i));
+    }
+    */
+
+
 }

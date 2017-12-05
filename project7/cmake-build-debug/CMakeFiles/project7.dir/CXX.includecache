@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/project7/GridDisplay.cpp
+GridDisplay.h
+/home/diamondrubix/CLionProjects/cs 211/project7/GridDisplay.h
+ctime
+-
+
+/home/diamondrubix/CLionProjects/cs 211/project7/GridDisplay.h
+cstdio
+-
+unistd.h
+-
+
+/home/diamondrubix/CLionProjects/cs 211/project7/GridMain.cpp
+GridDisplay.h
+/home/diamondrubix/CLionProjects/cs 211/project7/GridDisplay.h
+doodlebug.h
+/home/diamondrubix/CLionProjects/cs 211/project7/doodlebug.h
+ant.h
+/home/diamondrubix/CLionProjects/cs 211/project7/ant.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/ant.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/creature.cpp
+creature.h
+/home/diamondrubix/CLionProjects/cs 211/project7/creature.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/creature.h
+string
+-
+dynamicList.h
+/home/diamondrubix/CLionProjects/cs 211/project7/dynamicList.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/doodlebug.cpp
+doodlebug.h
+/home/diamondrubix/CLionProjects/cs 211/project7/doodlebug.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/doodlebug.h
+creature.h
+/home/diamondrubix/CLionProjects/cs 211/project7/creature.h
+
+/home/diamondrubix/CLionProjects/cs 211/project7/dynamicList.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+

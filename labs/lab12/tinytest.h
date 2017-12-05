@@ -72,6 +72,7 @@ const char* tt_current_msg = NULL;
 const char* tt_current_expression = NULL;
 const char* tt_current_file = NULL;
 int tt_current_line = 0;
+char* tt_current_name = NULL;
 
 typedef struct testinfo{
     const char* file;
@@ -81,16 +82,32 @@ typedef struct testinfo{
     bool pass;
 } testinfo;
 
+typedef struct failureInfo{
+    const char* current_file;
+    int current_line;
+    const char* name;
+    const char* current_msg;
+    const char* current_expression;
+
+};
+
 dynamicArray<testinfo*>* messages = new dynamicArray<testinfo*>();
+dynamicArray<failureInfo*>* failures = new dynamicArray<failureInfo*>();
 
 
 void tt_execute(const char* name, void (*test_function)())
 {
   tt_current_test_failed = false;
+    tt_current_name = (char*) malloc(sizeof(name));
+    strncpy(tt_current_name,name,sizeof(name));
+    //printf("%s",tt_current_name);
   test_function();
   if (tt_current_test_failed) {
+      /* replaced below
     printf("failure: %s:%d: In test %s():\n    %s (%s)\n",
       tt_current_file, tt_current_line, name, tt_current_msg, tt_current_expression);
+*/
+
     tt_fails++;
   } else {
     tt_passes++;
@@ -104,6 +121,8 @@ bool tt_assert(const char* file, int line, const char* msg, const char* expressi
   tt_current_file = file;
   tt_current_line = line;
   tt_current_test_failed = !pass;
+
+
     //strncpy(n->file,file,300);
   if(!pass){
     testinfo* n = new testinfo;
@@ -113,6 +132,19 @@ bool tt_assert(const char* file, int line, const char* msg, const char* expressi
     n->expression=expression;
     n->pass=pass;
     messages->add(n);
+
+
+
+    failureInfo* f = new failureInfo;
+    f->current_file=tt_current_file;
+    f->current_line=tt_current_line;
+    //f->name=name;
+    f->current_msg=tt_current_msg;
+    f->current_expression=tt_current_expression;
+      f->name=tt_current_name;
+    failures->add(f);
+
+
   }
 
   return pass;
@@ -121,14 +153,20 @@ bool tt_assert(const char* file, int line, const char* msg, const char* expressi
 int tt_report(void)
 {
   int i;
-  for(i=0;i<=messages->length();i++){
+  /*for(i=0;i<=messages->length();i++){
     //printf("%d\n",messages->get(i)->line);
     printf("%c%sFAILED%c%s [%s] (passed:%d, failed:%d, total:%d)\n",
            TT_COLOR_CODE, TT_COLOR_RED, TT_COLOR_CODE, TT_COLOR_RESET,
            messages->get(i)->file, tt_passes, messages->length()+1, tt_passes + messages->length()+1);
   }
+  */
+  for(i=0;i<=failures->length();i++){
+    failureInfo f = *failures->get(i);
+    printf("failure: %s:%d: In test %s():\n    %s (%s)\n",
+           f.current_file, f.current_line, f.name, f.current_msg, f.current_expression);
+  }
 
-  printf("\n\nbelow is normal \n\n");
+    printf("\n");
 
   if (tt_fails) {
     printf("%c%sFAILED%c%s [%s] (passed:%d, failed:%d, total:%d)\n",
