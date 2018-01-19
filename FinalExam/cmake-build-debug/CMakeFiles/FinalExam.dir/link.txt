@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/FinalExam.dir/main.cpp.o CMakeFiles/FinalExam.dir/dynamicList.cpp.o  -o FinalExam 

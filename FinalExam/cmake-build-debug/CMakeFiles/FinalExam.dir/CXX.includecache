@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diamondrubix/CLionProjects/cs 211/FinalExam/dynamicList.cpp
+dynamicList.h
+/home/diamondrubix/CLionProjects/cs 211/FinalExam/dynamicList.h
+
+/home/diamondrubix/CLionProjects/cs 211/FinalExam/dynamicList.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+/home/diamondrubix/CLionProjects/cs 211/FinalExam/main.cpp
+dynamicList.h
+/home/diamondrubix/CLionProjects/cs 211/FinalExam/dynamicList.h
+
