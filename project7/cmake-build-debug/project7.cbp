@@ -93,6 +93,9 @@
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project7/GridMain.cpp">
 			<Option target="project7"/>
 		</Unit>
+		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project7/ant.cpp">
+			<Option target="project7"/>
+		</Unit>
 		<Unit filename="/home/diamondrubix/CLionProjects/cs 211/project7/ant.h">
 			<Option target="project7"/>
 		</Unit>

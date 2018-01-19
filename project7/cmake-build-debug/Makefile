@@ -177,6 +177,33 @@ GridMain.cpp.s:
 	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/GridMain.cpp.s
 .PHONY : GridMain.cpp.s
 
+ant.o: ant.cpp.o
+
+.PHONY : ant.o
+
+# target to build an object file
+ant.cpp.o:
+	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/ant.cpp.o
+.PHONY : ant.cpp.o
+
+ant.i: ant.cpp.i
+
+.PHONY : ant.i
+
+# target to preprocess a source file
+ant.cpp.i:
+	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/ant.cpp.i
+.PHONY : ant.cpp.i
+
+ant.s: ant.cpp.s
+
+.PHONY : ant.s
+
+# target to generate assembly for a file
+ant.cpp.s:
+	$(MAKE) -f CMakeFiles/project7.dir/build.make CMakeFiles/project7.dir/ant.cpp.s
+.PHONY : ant.cpp.s
+
 creature.o: creature.cpp.o
 
 .PHONY : creature.o
@@ -246,6 +273,9 @@ help:
 	@echo "... GridMain.o"
 	@echo "... GridMain.i"
 	@echo "... GridMain.s"
+	@echo "... ant.o"
+	@echo "... ant.i"
+	@echo "... ant.s"
 	@echo "... creature.o"
 	@echo "... creature.i"
 	@echo "... creature.s"

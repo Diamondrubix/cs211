@@ -94,7 +94,7 @@ int main ( int argc, char** argv )
 
 
     //tick
-    int tick = 200;
+    int tick = 20;
     while(tick>=0) {
         gd.mySleep ( sleepTime );
         for(i=0;i<=creature::c->length();i++){

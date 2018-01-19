@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project7.dir/GridMain.cpp.o"
   "CMakeFiles/project7.dir/creature.cpp.o"
   "CMakeFiles/project7.dir/doodlebug.cpp.o"
+  "CMakeFiles/project7.dir/ant.cpp.o"
   "project7.pdb"
   "project7"
 )

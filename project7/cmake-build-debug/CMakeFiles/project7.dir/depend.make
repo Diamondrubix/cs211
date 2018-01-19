@@ -11,6 +11,11 @@ CMakeFiles/project7.dir/GridMain.cpp.o: ../creature.h
 CMakeFiles/project7.dir/GridMain.cpp.o: ../doodlebug.h
 CMakeFiles/project7.dir/GridMain.cpp.o: ../dynamicList.h
 
+CMakeFiles/project7.dir/ant.cpp.o: ../ant.cpp
+CMakeFiles/project7.dir/ant.cpp.o: ../ant.h
+CMakeFiles/project7.dir/ant.cpp.o: ../creature.h
+CMakeFiles/project7.dir/ant.cpp.o: ../dynamicList.h
+
 CMakeFiles/project7.dir/creature.cpp.o: ../creature.cpp
 CMakeFiles/project7.dir/creature.cpp.o: ../creature.h
 CMakeFiles/project7.dir/creature.cpp.o: ../dynamicList.h

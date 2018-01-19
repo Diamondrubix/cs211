@@ -1,11 +1,19 @@
-gddemo:  gddemo.cpp GridDisplay.o
-	g++ -o gddemo gddemo.cpp GridDisplay.o
+GridMain:  GridMain.cpp GridDisplay.o creature.o doodlebug.o ant.o dynamicList.h
+	g++ -o GridMain GridMain.cpp GridDisplay.o creature.o doodlebug.o ant.o
 
-gddemo: gddemo.cpp GridDisplay.o
-	g++ -o gddemo gddemo.cpp GridDisplay.o
 
 GridDisplay.o: GridDisplay.cpp GridDisplay.h
 	g++ -c GridDisplay.cpp
 
+creature.o: creature.cpp creature.h
+	g++ -c creature.cpp
+
+doodlebug.o: doodlebug.cpp doodlebug.h
+	g++ -c doodle.bug.cpp
+
+ant.o: ant.cpp ant.h
+	g++ -c ant.cpp
+
+
 clean:
-	rm -f *.o gddemo
+	rm -f *.o GridMain
